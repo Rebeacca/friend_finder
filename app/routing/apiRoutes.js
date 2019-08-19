@@ -1,7 +1,7 @@
-import path from "path";
-import friends, { forEach, push } from "../data/friends.js";
+var path = require("path");
+var friends = require("../data/friends.js");
 
-export default function (app) { 
+module.exports = function (app) { 
     app.get("/api/friends", function (req, res) {
         res.json(friends);
     });
