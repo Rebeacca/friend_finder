@@ -24,4 +24,4 @@ var friends = [{
 }
 ];
 
-export default friends;
+module.exports = friends;
